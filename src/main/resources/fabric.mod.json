@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "echoenchanting",
+	"version": "${version}",
+	"name": "Echo Enchanting",
+	"description": "Changes enchanting to be more like Minecraft Dungeons 2",
+	"authors": [
+		"aji56"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/echoenchanting/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"name.echoenchanting.EchoEnchanting"
+		],
+		"client": [
+			"name.echoenchanting.client.EchoEnchantingClient"
+		],
+		"fabric-datagen": [
+			"name.echoenchanting.client.EchoEnchantingDataGenerator"
+		]
+	},
+	"mixins": [
+		"echoenchanting.mixins.json",
+		{
+			"config": "echoenchanting.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
