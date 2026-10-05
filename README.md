@@ -1,10 +1,11 @@
 # Echo Enchanting
 This mod aims to implement a system similar to the way enchanting works in Minecraft Dungeons 2, 
 with enchanted books being reusable, but require specific ways of getting each enchantment, 
-and costing experience and echo shards (or a different configurable catalyst) to apply to tools.
+and costing experience and echo shards (or a different configurable catalyst) to apply to tools.<br><br>
+Currently in early development; this readme is meant as a design document for reference at the moment.
 ## Specifics
 ### Anvils
-Any anvil operation that specifically involves an enchanted book in the addition slot has been disabled via a mixin.
+Any anvil operation that specifically involves an enchanted book in the addition slot has been disabled via a mixin by default.
 ### Enchanting Table
 Applying enchanted books is now done via the enchanting table, and the vanilla functions and GUI for it have been changed.
 There are 3 slots in the new menu: one for the item to enchant, one for enchanted books, and one for catalysts.
@@ -105,7 +106,7 @@ before last is false), list of enchants that are blacklisted from being removed 
 be applied with an anvil (default empty)
 + Enchanted book obtaining options: replace randomly enchanted books (default true), option to randomize methods for obtaining
 all enchantments differently per world (default false), randomization difficulty for last option (defaults to range of 0-1, 
-integer refers to conditions to place for each enchantment) auto-populated list of all registered enchantments with their 
+integer refers to conditions to place for each enchantment), auto-populated list of all registered enchantments with their 
 obtain method (vanilla defaults below, ignored if randomize option is true, each enchant must have at least one obtain method, 
 must contain obtain category from previous section and options pertaining to the category being used, something like: crafted 
 with book and quill and 8 redstone blocks, traded with book and quill and 40 emeralds from a butcher, injected into loot table
