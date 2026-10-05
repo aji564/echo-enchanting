@@ -86,6 +86,8 @@ base catalyst cost (default 1), option to apply a multiplier based on the enchan
 multiplier from the last option (default 1, ignored if last option is false), option to apply an additive rising cost based 
 on the level of enchantment being applied (default false), additive cost per level from the last option (default 1, ignored 
 if last option is false)
++ Catalyst extra obtaining options: list of items + their extra way of obtaining (defaults to adding echo shards as a rare
+player kill only drop from hostile mobs + multiple echo shards from bosses)
 + Experience level requirement/cost options: maximum required level (base 30), list of enchantments that use a different 
 maximum required level (default empty, will require a namespace:id combo + the new max required level, anything not on this 
 list will use the master level from the previous option), base experience level cost (default 1), option to apply an additive 
@@ -102,10 +104,11 @@ before last is false), list of enchants that are blacklisted from being removed 
 + Anvil options: disable applying enchanted books with an anvil (default true), list of enchants that are still allowed to
 be applied with an anvil (default empty)
 + Enchanted book obtaining options: replace randomly enchanted books (default true), option to randomize methods for obtaining
-all enchantments differently per world (default false), auto-populated list of all registered enchantments with their obtain
-method (vanilla defaults below, ignored if last option is true, each enchant must have at least one obtain method, must contain
-obtain category from previous section and options pertaining to the category being used, something like: crafted with book
-and quill and 8 redstone blocks, traded with book and quill and 40 emeralds from a butcher, injected into loot table
+all enchantments differently per world (default false), randomization difficulty for last option (defaults to range of 0-1, 
+integer refers to conditions to place for each enchantment) auto-populated list of all registered enchantments with their 
+obtain method (vanilla defaults below, ignored if randomize option is true, each enchant must have at least one obtain method, 
+must contain obtain category from previous section and options pertaining to the category being used, something like: crafted 
+with book and quill and 8 redstone blocks, traded with book and quill and 40 emeralds from a butcher, injected into loot table
 minecraft:chests/ancient_city)
 + Enchanted book upgrade options: auto-populated list of all registered enchantments with their upgrade methods for each
 level (vanilla defaults below, ignored if randomize option is true, must contain at least one upgrade method per enchant
@@ -114,6 +117,9 @@ category being used, something like: crafted with 4 armadillo scutes and 4 turtl
 template and a netherite ingot, dropped into lava while in a nether fortress, in a player's inventory while they have
 dolphin's grace inside a shipwreck, etc.)
 + Client options: show obtaining tooltips (default true), show upgrading tooltips (default true)
+
+### Default book obtaining/upgrading
+todo
 
 
 [Fabric Documentation page](https://docs.fabricmc.net/develop/getting-started/creating-a-project#setting-up) 
