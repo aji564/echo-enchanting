@@ -1,4 +1,4 @@
-package name.echoenchanting.client.mixin;
+package echoenchanting.client.mixin;
 
 import net.minecraft.client.Minecraft;
 import org.spongepowered.asm.mixin.Mixin;

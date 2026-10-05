@@ -16,13 +16,13 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"name.echoenchanting.EchoEnchanting"
+			"echoenchanting.EchoEnchanting"
 		],
 		"client": [
-			"name.echoenchanting.client.EchoEnchantingClient"
+			"echoenchanting.client.EchoEnchantingClient"
 		],
 		"fabric-datagen": [
-			"name.echoenchanting.client.EchoEnchantingDataGenerator"
+			"echoenchanting.client.EchoEnchantingDataGenerator"
 		]
 	},
 	"mixins": [

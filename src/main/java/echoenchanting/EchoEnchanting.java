@@ -1,5 +1,6 @@
-package name.echoenchanting;
+package echoenchanting;
 
+import echoenchanting.registry.ModMenuTypes;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.resources.Identifier;
@@ -20,6 +21,7 @@ public class EchoEnchanting implements ModInitializer {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
+		ModMenuTypes.initialize();
 
 		LOGGER.info("Hello Fabric world!");
 	}
